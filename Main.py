@@ -15,8 +15,8 @@ client = OpenAI(
 def send_alert_email(message):
     sg = SendGridAPIClient(st.secrets["SENDGRID_API_KEY"])
     email = Mail(
-        from_email=st.secrets["siddharthr1705@gmail.com"],
-        to_emails=st.secrets["siddharthjaiswalvns123@gmail.com"],
+        from_email=st.secrets["ALERT_EMAIL_FROM"],
+        to_emails=st.secrets["ALERT_EMAIL_TO"],
         subject="🚨 Mental Health Crisis Alert",
         html_content=f"<strong>{message}</strong>"
     )
