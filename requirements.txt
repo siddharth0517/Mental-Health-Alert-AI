@@ -1,0 +1,12 @@
+streamlit
+openai
+sendgrid
+speechrecognition
+pydub
+python-dotenv
+
+# Optional: If using Firebase Firestore
+# firebase-admin
+
+# For audio file handling
+numpy
