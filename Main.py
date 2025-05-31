@@ -31,7 +31,7 @@ def send_alert_email(message):
 def analyze_with_gemma(prompt):
     try:
         response = client.chat.completions.create(
-            model="google/gemma-3n-e4b-it:free",  # ✅ FIXED: Correct model name
+            model="meta-llama/llama-4-maverick:free",  # ✅ FIXED: Correct model name
             messages=[
                 {
                     "role": "system",
